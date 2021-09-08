@@ -1,0 +1,165 @@
+<!DOCTYPE html> 
+
+<html> 
+
+<head> 
+
+    <meta charset="utf-8" /> 
+
+    <title>Order</title> 
+
+    <link href="StyleSheet.css" rel="stylesheet" /> 
+
+    <style> 
+
+        tr td { 
+
+            text-align: center; 
+
+        } 
+
+        td input{ 
+
+            width:38px; 
+
+            height:38px; 
+
+            margin:5px 10px; 
+
+        } 
+
+    </style> 
+
+</head> 
+
+<body > 
+
+    <header> 
+
+        <h1 class="h"> 
+
+            Prime Pizza  
+
+        </h1>        
+
+    </header> 
+
+    <div class="boxMenu"> 
+
+         
+
+        <h2 align="center">Place Order</h2> 
+
+        <table align="center" 
+
+               cellspacing="10"> 
+
+            <tr> 
+
+                <th></th> 
+
+                <th>Products</th> 
+
+                <th>Size</th> 
+
+                <th>Price</th> 
+
+                <th>Quantity</th> 
+
+            </tr> 
+
+            <tr> 
+
+                <td><input id="cfs" type="checkbox" value="CHICKEN FAJITA SUPREME" /></td> 
+
+                <td>CHICKEN FAJITA SUPREME</td> 
+
+                <td> 
+
+                    <select id="cfsSize" onchange="selectPriceCFS();"> 
+
+                        <option>Regular</option> 
+
+                        <option>Small</option> 
+
+                        <option>Large</option> 
+
+                    </select> 
+
+                </td> 
+
+                <td ><p id="prCFS">1100</p></td> 
+
+                <td><input id="qtyCfs" type="number" /></td> 
+
+            </tr> 
+
+            <tr> 
+
+                <td><input id="CC" type="checkbox" value="CHILLI CHICKEN" /></td> 
+
+                <td>CHILLI CHICKEN</td> 
+
+                <td> 
+
+                    <select id="CCSize" onchange="selectPriceCC();"> 
+
+                        <option>Regular</option> 
+
+                        <option>Small</option> 
+
+                        <option>Large</option> 
+
+                    </select> 
+
+                </td> 
+
+                <td><p id="prCC">1100</p></td> 
+
+                <td><input id="qtyCC" type="number" /></td> 
+
+            </tr> 
+
+            <tr> 
+
+                <td><input id="cf" type="checkbox" value="CHICKEN FAJITA" /></td> 
+
+                <td>CHICKEN FAJITA</td> 
+
+                <td> 
+
+                    <select id="cfSize" onchange="selectPriceCF();"> 
+
+                        <option>Regular</option> 
+
+                        <option>Small</option> 
+
+                        <option>Large</option> 
+
+                    </select> 
+
+                </td> 
+
+                <td id="prCF">1100</td> 
+
+                <td><input id="qtyCF" type="number" /></td> 
+
+            </tr> 
+
+            <tr> 
+
+                <td colspan="5"><input id="Button1" type="button" value="Place Order" style="color:white; width:100%; font-size:18px; height:30px; background-color:#2e6404; border:none; margin-top:7px;" onclick="bill();" /></td> 
+
+            </tr> 
+
+        </table> 
+
+    </div> 
+
+    <footer class="f">&copy; Copyright Prime Pizza | <a href="SignUp.html" align="right" style="color:white; ">Log Out</a></footer> 
+
+    <script src="Accounts.js"></script> 
+
+</body> 
+
+</html> 
